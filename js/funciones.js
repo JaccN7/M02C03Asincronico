@@ -20,10 +20,16 @@ function game() {
     console.log("Opción del jugador: "+ seleccion);
     var random = Math.floor((Math.random() * 3) + 1);
     console.log("Valor random: " + random)
+
     if (seleccion == random) {
-        document.getElementById("juego").innerHTML = ('<h4 class="centrar">¡¡¡Ganaste!!!</h4><br/><p class="centrar"><img src="images/ganaste.jpg" /></p><br/><p class="centrar"><button type="submit" class="btn btn-primary centrar" onclick="volveraJugar()">Volver a Intentarlo</button></p>');
+        document.getElementById("juego").innerHTML = ('<h4 class="centrar">EMPATE</h4><br/><p class="centrar"><img src="images/empate.jpg" width="75%" height="75%" /></p><br/><p class="centrar"><button type="submit" class="btn btn-primary centrar" onclick="volveraJugar()">Volver a Intentarlo</button></p>');
     } else {
-        document.getElementById("juego").innerHTML = ('<h4 class="centrar">¡¡¡PERDISTE!!!</h4><br/><p class="centrar"><img src="images/nelson.jpg" width="50%" height="50%" /></p><br/><p class="centrar"><button type="submit" class="btn btn-primary centrar" onclick="volveraJugar()">Volver a Intentarlo</button></p>');
+        if(seleccion==2 && random==1 || seleccion==3 && random==2 || seleccion==3 && random==1){
+            document.getElementById("juego").innerHTML = ('<h4 class="centrar">¡¡¡GANASTE!!!</h4><br/><p class="centrar"><img src="images/ganaste.jpg" width="75%" height="75%" /></p><br/><p class="centrar"><button type="submit" class="btn btn-primary centrar" onclick="volveraJugar()">Volver a Intentarlo</button></p>');
+        }else{
+            document.getElementById("juego").innerHTML = ('<h4 class="centrar">¡¡¡PERDISTE!!!</h4><br/><p class="centrar"><img src="images/nelson.jpg" width="75%" height="75%" /></p><br/><p class="centrar"><button type="submit" class="btn btn-primary centrar" onclick="volveraJugar()">Volver a Intentarlo</button></p>');
+        }
+        
     }
 }
 
