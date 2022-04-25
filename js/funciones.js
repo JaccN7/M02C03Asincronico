@@ -1,6 +1,4 @@
 function fizzBuzz() {
-    var numero;
-
     for (var i = 1; i <= 100; i++) {
         if (i % 3 == 0 && i % 5 == 0) {
             console.log("FizzBuzz: " + i);
@@ -17,8 +15,9 @@ function fizzBuzz() {
 }
 
 function game() {
+    console.log("1.- Piedra | 2.- Papel | 3.- Tijeras")
     var seleccion = parseInt(document.querySelector('[name=optGame]:checked').value);
-
+    console.log("Opción del jugador: "+ seleccion);
     var random = Math.floor((Math.random() * 3) + 1);
     console.log("Valor random: " + random)
     if (seleccion == random) {
