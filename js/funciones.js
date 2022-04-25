@@ -29,5 +29,5 @@ function game() {
 }
 
 function volveraJugar() {
-    document.getElementById("juego").innerHTML = ('<form role="form" onsubmit="game()"><label class="radio-inline"><input type="radio" name="optGame" value="1" required><img src="images/roca.png" class="img" /></label><label class="radio-inline"><input type="radio" name="optGame" value="2"><img src="images/hoja-en-blanco.png" class="img" /></label><label class="radio-inline"><input type="radio" name="optGame" value="3"><img src="images/tijeras.png" class="img" /></label><button type="submit" class="btn btn-primary">Jugar</button></form>');
+    document.getElementById("juego").innerHTML = ('<h5> Juguemos Piedra, Papel y Tijeras!</h5><form role="form" onsubmit="game()"><label class="radio-inline"><input type="radio" name="optGame" value="1" required><img src="images/roca.png" class="img" /></label><label class="radio-inline"><input type="radio" name="optGame" value="2"><img src="images/hoja-en-blanco.png" class="img" /></label><label class="radio-inline"><input type="radio" name="optGame" value="3"><img src="images/tijeras.png" class="img" /></label><button type="submit" class="btn btn-primary">Jugar</button></form>');
 }
