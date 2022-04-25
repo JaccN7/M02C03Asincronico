@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>M02C02</title>
+    <!-- AUTOR -->
+    <meta name="author" content="JaccN7" />
+    <!-- FAVICON -->
+    <link rel="icon" type="image/x-icon" href="images/JaccN7v1.png" />
+    <!-- BOOTSTRAP CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css"
+        integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <!-- MI CSS -->
+    <link href="css/style.css" rel="stylesheet" />
+    <!-- FUENTE FIRA SANS " https://fonts.google.com/specimen/Fira+Sans?query=fira " -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Fira+Sans&display=swap" rel="stylesheet">
+    <!-- Font Awesome icons (VERSIÓN GRATUITA) -->
+    <script src="https://use.fontawesome.com/releases/v6.1.0/js/all.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <!-- MENÚ DE NAVEGACIÓN -->
+    <nav class="navbar navbar-expand-lg text-uppercase nav fixed-top">
+        <button class="navbar-toggler centrar" type="button" data-toggle="collapse" data-target="#navbarResponsive">
+            <span class="navbar-toggler-icon ">
+                <i class="fas fa-bars"></i>
+            </span>
+        </button> <a class="navbar-brand enlace" href="index.html">M02C02</a>
+        <div class="collapse navbar-collapse" id="navbarResponsive">
+            <ul class="navbar-nav ml-md-auto">
+                <li class="nav-item">
+                    <a class="nav-link enlace" href="index.html">Inicio</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- ENCABEZADO -->
+    <header id="inicio">
+        <div class="container-fluid text-uppercase">
+            <div class="row">
+                <div class="col-md-12">
+                    <h4 class="text-center">
+                        <br />
+                        M02C02 - Ejercicios asincrónicos
+                    </h4>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-md-12">
+                <h3> Ejercicio M02 C03 </h3>
+            </div>
+            <div class="col-md-6">
+                <h4> JavaScript Básico - Ejercicio asincrónico 04 </h4><br />
+                <img src="images/instrucciones.jpg" width="100%" height="65%" /><br /><br />
+                <p>Según las instrucciones los resultados se mostraran en la consola cuando apriete "Consultar".</p>
+                <br />
+                <button type="submit" class="btn btn-primary" onclick="fizzBuzz()">
+                    Consultar
+                </button>
+            </div>
+            <div class="col-md-6 container" id="juego">
+                <h4> JavaScript Básico - Ejercicio asincrónico 05 </h4><br />
+                <h5> Juguemos Piedra, Papel y Tijeras!</h5>
+                <form role="form" onsubmit="game()">
+                    <label class="radio-inline">
+                        <input type="radio" name="optGame" value="1" required><img src="images/roca.png" class="img" />
+                    </label>
+                    <label class="radio-inline">
+                        <input type="radio" name="optGame" value="2"><img src="images/hoja-en-blanco.png" class="img" />
+                    </label>
+                    <label class="radio-inline">
+                        <input type="radio" name="optGame" value="3"><img src="images/tijeras.png" class="img" />
+                    </label><br/><br/>
+                    <button type="submit" class="btn btn-primary">
+                        Jugar
+                    </button>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <!-- PIÉ DE PÁGINA -->
+    <footer class="centrar fixed-bottom">
+        <div class="container"><small><a href="http://plataforma5.iicap.cl/" class="enlace">Bootcamp
+                    2022</a></small></div>
+    </footer>
+    <!-- Javascript -->
+    <script src="js/funciones.js"></script>
+</body>
+
+</html>

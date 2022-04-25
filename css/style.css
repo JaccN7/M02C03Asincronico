@@ -1,0 +1,75 @@
+/* ESTE ES MI CSS */
+
+/* PALETA DE COLORES */
+:root {
+    --color-nav: #012C56;
+    --color-body: #E7F7FB;
+    --color-header: #79B4EC;
+    --color-fontEnlace: #ffffff;
+    --color-baseCard: #E7F7FB;
+}
+
+body {
+    width: 100%;
+    height: auto;
+    margin: 0 auto;
+    background-color: var(--color-body);
+    font-family: 'Fira Sans', sans-serif;
+}
+
+.nav {
+    padding-left: 5%;
+    padding-right: 10%;
+    background-color: var(--color-nav);
+    color: var(--color-fontEnlace);
+}
+
+header {
+    width: 100%;
+    height: auto;
+    background-color: var(--color-header);
+    padding-top: 3%;
+    padding-bottom: 1.5%;
+}
+
+.enlace,
+.enlace a {
+    text-decoration: none;
+    color: var(--color-fontEnlace);
+}
+
+.enlace a:hover {
+    text-decoration: none;
+    font-weight: bold;
+    color: var(--color-header);
+}
+
+.centrar {
+    text-align: center;
+}
+
+.resume {
+    width: 100%;
+    padding: 0.5% 2.5% 0.5% 2.5%;
+}
+
+.justify {
+    text-align: justify;
+}
+
+footer {
+    padding-top: 1.5%;
+    padding-bottom: 1%;
+    background-color: var(--color-nav);
+    color: var(--color-fontEnlace);
+}
+
+.img {
+    height: 15%;
+    width: 15%;
+    display: inline-block;
+}
+
+hr {
+    background-color: var(--color-fontEnlace);
+}
